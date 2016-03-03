@@ -1,5 +1,5 @@
 # pre-histogrammed-Image-Data-File
-Example to read the header of PicoQuant pre-histogrammed image data files
+Python example code to read PicoQuant pre-histogrammed image data files
 
 
 ## Structure of the pre-histogrammed Image Data File
