@@ -9,22 +9,23 @@ if len(sys.argv) != 2:
 
 fin=open(sys.argv[1])
 
-# PixX	int32	pixels in X-direction
+# PixX pixels in X-direction (int32)
 PixX = struct.unpack('i',fin.read(4))[0]
 print 'PixX: ' + str(PixX)
-# PixY	int32	pixels in Y-direction
+# PixY pixels in Y-direction (int32)
 PixY = struct.unpack('i',fin.read(4))[0]
 print 'PixY: ' + str(PixY)
-# PixResol	float32	spatial pixel resolution in micrometer
+# PixResol spatial pixel resolution in micrometer (float32)
 PixResol = struct.unpack('f',fin.read(4))[0]
 print 'PixResol: '+ str(PixResol)
-# TCSPCChannels	int32	number of TCSPC channels per pixel
+# TCSPCChannels number of TCSPC channels per pixel (float32)
 TCSPCChannels = struct.unpack('i',fin.read(4))[0]
 print 'TCSPCChannels: '+  str(TCSPCChannels)
-# TimeResol	float32	time resolution of the TCSPC histograms in ns
+# TimeResol	time resolution of the TCSPC histograms in ns (float32)
 TimeResol = struct.unpack('f',fin.read(4))[0]
 print 'TimeResol: '+ str(TimeResol)
 
+# the histogram is composed of TCSPCChannels int32 values
 DecayFormatString = str(TCSPCChannels)+'i'
 
 for y in range(PixY+):
