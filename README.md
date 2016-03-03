@@ -10,7 +10,8 @@ Example to read the header of PicoQuant pre-histogrammed image data files
 ￼￼￼
 |Data Item    | | | |Type              |Description                                             | 
 |-------------|-|-|-|------------------|--------------------------------------------------------| 
-|PixX         ||||''int32''            |pixels in X-direction                                   | 
+|PixX         | | | |```int32```       |pixels in X-direction                                   | 
+
 |PixY         ||||''int32''            |pixels in Y-direction                                   | 
 |PixResol     ||||''float32''          |spatial pixel resolution in μm                          | 
 |TCSPCChannels||||''int32''            |number of TCSPC channels per pixel                      | 
