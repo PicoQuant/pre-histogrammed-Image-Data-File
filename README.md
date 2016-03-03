@@ -8,9 +8,9 @@ Example to read the header of PicoQuant pre-histogrammed image data files
 |------|-------|
 | item | item  |
 ￼￼￼
-| Data Item   | 1 | 2 | 3 | Type              | Description                                             | 
-|-------------|-|-|-|------------------|--------------------------------------------------------| 
-| PixX         | | | | ```int32```       | pixels in X-direction                                   | 
+| Data Item   | 1 | 2 | 3 | Type              | Description                                             |
+|-------------|-|-|-|------------------|--------------------------------------------------------|
+| PixX         | | | | ```int32```       | pixels in X-direction                                   |
 
 |PixY         ||||''int32''            |pixels in Y-direction                                   | 
 |PixResol     ||||''float32''          |spatial pixel resolution in μm                          | 
