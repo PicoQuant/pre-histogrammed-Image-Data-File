@@ -10,14 +10,25 @@ if len(sys.argv) != 2:
 fin=open(sys.argv[1])
 
 # PixX	int32	pixels in X-direction
-print 'PixX: ' + str(struct.unpack('i',fin.read(4))[0])
+PixX = struct.unpack('i',fin.read(4))[0]
+print 'PixX: ' + str(PixX)
 # PixY	int32	pixels in Y-direction
-print 'PixY: ' + str(struct.unpack('i',fin.read(4))[0])
+PixY = struct.unpack('i',fin.read(4))[0]
+print 'PixY: ' + str(PixY)
 # PixResol	float32	spatial pixel resolution in micrometer
-print 'PixResol: '+ str(struct.unpack('f',fin.read(4))[0])
+PixResol = struct.unpack('f',fin.read(4))[0]
+print 'PixResol: '+ str(PixResol)
 # TCSPCChannels	int32	number of TCSPC channels per pixel
-print 'TCSPCChannels: '+  str(struct.unpack('i',fin.read(4))[0])
+TCSPCChannels = struct.unpack('i',fin.read(4))[0]
+print 'TCSPCChannels: '+  str(TCSPCChannels)
 # TimeResol	float32	time resolution of the TCSPC histograms in ns
-print 'TimeResol: '+ str(struct.unpack('f',fin.read(4))[0])
+TimeResol = struct.unpack('f',fin.read(4))[0]
+print 'TimeResol: '+ str(TimeResol)
 
+DecayFormatString = str(TCSPCChannels)+'i'
+
+for y in range(PixY+):
+    for x in range(PixX):
+        TCSPCDecay=struct.unpack(DecayFormatString,fin.read(TCSPCChannels*4))
+        # Now do something with the TCSPCDecay of that specific pixel
 fin.close()
