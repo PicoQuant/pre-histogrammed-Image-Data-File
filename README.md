@@ -8,7 +8,7 @@ Example to read the header of PicoQuant pre-histogrammed image data files
 |------|-------|
 | item | item  |
 ￼￼￼
-|Data Item    ||||Type                 |Description                                             | 
+|Data Item    | | | |Type              |Description                                             | 
 |-------------|-|-|-|------------------|--------------------------------------------------------| 
 |PixX         ||||''int32''            |pixels in X-direction                                   | 
 |PixY         ||||''int32''            |pixels in Y-direction                                   | 
