@@ -21,7 +21,7 @@ print 'PixResol: '+ str(PixResol)
 # TCSPCChannels number of TCSPC channels per pixel (float32)
 TCSPCChannels = struct.unpack('i',fin.read(4))[0]
 print 'TCSPCChannels: '+  str(TCSPCChannels)
-# TimeResol	time resolution of the TCSPC histograms in ns (float32)
+# TimeResol time resolution of the TCSPC histograms in ns (float32)
 TimeResol = struct.unpack('f',fin.read(4))[0]
 print 'TimeResol: '+ str(TimeResol)
 
