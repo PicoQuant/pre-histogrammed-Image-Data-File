@@ -9,15 +9,15 @@ Example to read the header of PicoQuant pre-histogrammed image data files
 | item | item  |
 
 
-| Data Item   | | | | Type              | Description                                             |
+| Data Item   |   |   |   | Type              | Description                                             |
 |-------------|---|---|---|-------------------|---------------------------------------------------------|
 | PixX        |   |   |   | ```int32```       | pixels in X-direction                                   |
+| PixY        |   |   |   | ```int32```       | pixels in Y-direction                                   | 
+|PixResol     |   |   |   | ```float32```     | spatial pixel resolution in μm                          | 
+|TCSPCChannels|   |   |   | ```int32```       | number of TCSPC channels per pixel                      | 
 
 
 
-|PixY         ||||''int32''            |pixels in Y-direction                                   | 
-|PixResol     ||||''float32''          |spatial pixel resolution in μm                          | 
-|TCSPCChannels||||''int32''            |number of TCSPC channels per pixel                      | 
 |TimeResol    ||||''float32''          |time resolution of the TCSPC histograms in ns           | 
 |The following block will appear in the file for each ''y = 1 to <PixY>''                  |||||| 
 | |The following block will appear in block (y) for each ''x = 1 to <PixX>''                ||||| 
