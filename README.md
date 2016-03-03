@@ -9,7 +9,7 @@ Example to read the header of PicoQuant pre-histogrammed image data files
 | item | item  |
 
 
-| Data Item   | 1 | 2 | 3 | Type              | Description                                             |
+| Data Item   | | | | Type              | Description                                             |
 |-------------|---|---|---|-------------------|---------------------------------------------------------|
 | PixX        |   |   |   | ```int32```       | pixels in X-direction                                   |
 
