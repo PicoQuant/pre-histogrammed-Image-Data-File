@@ -13,7 +13,7 @@ fin=open(sys.argv[1])
 print 'PixX: ' + str(struct.unpack('i',fin.read(4))[0])
 # PixY	int32	pixels in Y-direction
 print 'PixY: ' + str(struct.unpack('i',fin.read(4))[0])
-# PixResol	float32	spatial pixel resolution in μm
+# PixResol	float32	spatial pixel resolution in micrometer
 print 'PixResol: '+ str(struct.unpack('f',fin.read(4))[0])
 # TCSPCChannels	int32	number of TCSPC channels per pixel
 print 'TCSPCChannels: '+  str(struct.unpack('i',fin.read(4))[0])
