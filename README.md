@@ -3,7 +3,11 @@ Example to read the header of PicoQuant pre-histogrammed image data files
 
 
 ## Structure of the pre-histogrammed Image Data File
-￼￼￼￼
+
+| test | test2 |
+|------|-------|
+| item | item  |
+￼￼￼
 |Data Item    ||||Type                 |Description                                             | 
 |-------------|-|-|-|------------------|--------------------------------------------------------| 
 |PixX         ||||''int32''            |pixels in X-direction                                   | 
