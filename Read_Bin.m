@@ -1,6 +1,6 @@
 % Reads PicoQuant bin files exported from SymPhoTime64
 % This is demo code. Use at your own risk.
-% No warranties and no support, because this is elementary.
+% No warranties and no support.
 % Peter Kapusta, PicoQuant GmbH, January 22th, 2018
  
     clear all;
